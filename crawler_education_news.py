@@ -1,4 +1,4 @@
-# Date: 2025-11-03
+# Code Creation Date: 2025-11-03
 # Purpose: (Currently) crawl down info from department of education affairs from SSPU
 import time
 import requests
@@ -19,7 +19,7 @@ if __name__ == "__main__":
     news_items = (soup.find(class_="news_list")
                   .find_all("li", class_="news"))
 
-    print("== 学校新闻资讯通知 ==")
+    print("== SSPU教务处新闻资讯通知 ==")
     for news_item in news_items:
         time.sleep(0.25)
         print("条目:")
